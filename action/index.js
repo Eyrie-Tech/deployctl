@@ -8,7 +8,7 @@ try {
   const fileName = core.getInput("fileName");
 
   // Deploy
-  const origin = "http://139.59.198.139";
+  const origin = "https://eyrie.app";
   const aud = new URL("/v1/deployments", origin);
   let token;
   try {
