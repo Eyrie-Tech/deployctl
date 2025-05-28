@@ -1,0 +1,18 @@
+name: 'Eyrie Deploy Action'
+description: 'Deploy an eyrie app'
+inputs:
+  artifactId:
+    description: 'Artifact Id of Application'
+    required: true
+  tag:
+    description: 'Tag of the Artifact'
+    required: true
+  fileName:
+    description: 'File name of the Artifact'
+    required: true
+  entrypoint:
+    description: 'App entrypoint'
+    default: 'main.ts'
+runs:
+  using: 'node20'
+  main: '../../../action/index.js'
