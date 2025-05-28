@@ -1,4 +1,4 @@
-# eyrie/deployctl
+# eyrie-tech/deployctl
 
 GitHub Actions for deploying to Eyrie.
 
@@ -37,7 +37,7 @@ jobs:
 
 ```yaml
 - name: Deploy to Eyrie
-  uses: eyrie/deployctl@v1
+  uses: eyrie-tech/deployctl@main
   with:
     # The GitHub artifact ID containing a pre-built OCI image tarball, created using
     # `docker save ...`.
@@ -65,7 +65,7 @@ All files and subdirectories in the **working directory** will be deployed.
 
 ```yaml
 - name: Deploy to Eyrie
-  uses: eyrie/deployctl@v1
+  uses: eyrie-tech/deployctl@main
   with:
     artifactId: "123456"
     tag: my-lovely/app:654321

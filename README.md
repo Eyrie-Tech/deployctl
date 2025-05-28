@@ -1,6 +1,6 @@
 # deployctl
 
-This repository contains the `eyrie/deployctl` GitHub Action.
+This repository contains the `eyrie-tech/deployctl` GitHub Action.
 
 ## Action Example
 
@@ -22,7 +22,7 @@ jobs:
            uses: actions/checkout@v3
 
          - name: Deploy eyrie app
-           uses: ./.github/actions/deploy
+           uses: eyrie-tech/deployctl@main
            with:
               artifactId: "123456"
               tag: my-lovely/app:654321
