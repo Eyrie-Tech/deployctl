@@ -15,4 +15,4 @@ inputs:
     default: 'main.ts'
 runs:
   using: 'node20'
-  main: '../../../action/index.js'
+  main: 'action/index.js'
